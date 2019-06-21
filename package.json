@@ -1,13 +1,10 @@
 {
   "name": "biggybank",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "refill a bitcoin address from console",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "unwriter@protonmail.com",
+  "license": "MIT",
   "dependencies": {
     "datapay": "0.0.15",
     "qrcode-terminal": "^0.12.0"
