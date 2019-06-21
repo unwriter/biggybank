@@ -10,7 +10,10 @@ biggybank is a drop-in library that lets you refill a Bitcoin address from conso
 
 # Install
 
+Install both bsv and biggybank
+
 ```
+npm install --save bsv
 npm install --save biggybank
 ```
 
