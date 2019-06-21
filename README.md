@@ -6,7 +6,7 @@ biggybank is a drop-in library that lets you refill a Bitcoin address from conso
 
 1. QRCode
 2. MoneyButton (Through [ButtonPage](https://button.bitdb.network)
-3. Send a PR if you have one
+3. [Send a PR](https://github.com/unwriter/biggybank/compare) if you have another method
 
 # Install
 
