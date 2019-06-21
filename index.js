@@ -17,7 +17,8 @@ ${o.message ? "##\n## " + o.message + '\n##' : '##'}
 #################################################################################\n\n`;
           message += code;
           message += "\n\n[HOW TO REFILL]"
-          message += ("\nOption 1. Scan the QR code above.\n")
+          message += ("\nMethod 1. Copy and paste address: bitcoin:" + o.address + "?sv")
+          message += ("\nMethod 2. Scan the QR code above.\n")
           let payload = o.payload ? o.payload : {
             "to": o.address,
             "editable": true,
@@ -27,7 +28,7 @@ ${o.message ? "##\n## " + o.message + '\n##' : '##'}
           let str = JSON.stringify(payload);
           let b64 = Buffer.from(str).toString("base64");
           let url = "https://button.bitdb.network/#" + b64;
-          message += ("Option 2. Use ButtonPage to refill with Moneybutton:\n" + url + "\n");
+          message += ("Method 3. Use ButtonPage to refill with Moneybutton:\n" + url + "\n");
           done(null, message)
         }
       });
