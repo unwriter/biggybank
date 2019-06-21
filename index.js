@@ -3,7 +3,8 @@ const datapay = require('datapay')
 module.exports = function(o, done) {
   if (o.address || (o.payload && o.payload.to)) {
     qrcode.generate("bitcoin:"+o.address, function(code) {
-      datapay.connect('https://api.bitindex.network').address(o.address, function(err, info) {
+      let endpoint = o.endpoint ? o.endpoint : "https://api.bitindex.network";
+      datapay.connect(endpoint).address(o.address, function(err, info) {
         if (err) {
           done(err, null)
         } else {

@@ -51,6 +51,15 @@ biggybank({
 })
 ```
 
+# Specifying Insight endpoint
+
+```
+const biggybank = require('biggybank')
+biggybank({ endpoint: "https://bchsvexplorer.com" }, function(err, str) {
+  console.log(str)
+})
+```
+
 # Advanced Usage for Moneybutton
 
 You can also manually construct moneybutton payload:
