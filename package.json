@@ -1,6 +1,6 @@
 {
   "name": "biggybank",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "refill a bitcoin address from console",
   "main": "index.js",
   "author": "unwriter@protonmail.com",
